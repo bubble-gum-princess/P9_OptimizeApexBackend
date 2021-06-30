@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Jun 30 2021 21:00:58",
+    "testExecutionTimeInMs": 293,
+    "testTotalTimeInMs": 293,
+    "commandTimeInMs": 121,
+    "hostname": "https://cunning-goat-mg4vir-dev-ed.my.salesforce.com",
+    "orgId": "00D09000008XtqAEAS",
+    "username": "faiz.mouna@cunning-goat-mg4vir.com",
+    "testRunId": "7070900000MxKWB",
+    "userId": "00509000007POwVAAW"
+  },
+  "tests": [
+    {
+      "id": "07M09000001hSagEAE",
+      "queueItemId": "709090000011igPAAQ",
+      "stackTrace": "Class.UpdateAccountCATest.test: line 20, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [EffectiveDate, Status]: [EffectiveDate, Status]",
+      "asyncApexJobId": "7070900000MxKWBAA3",
+      "methodName": "test",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p0900000K4Qd0AAF",
+        "name": "UpdateAccountCATest",
+        "namespacePrefix": null,
+        "fullName": "UpdateAccountCATest"
+      },
+      "runTime": 293,
+      "testTimestamp": "2021-06-30T19:00:58.000+0000",
+      "fullName": "UpdateAccountCATest.test",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [EffectiveDate, Status]: [EffectiveDate, Status]",
+        "exceptionStackTrace": "Class.UpdateAccountCATest.test: line 20, column 1",
+        "className": "UpdateAccountCATest",
+        "compileProblem": "",
+        "lineNumber": 20,
+        "columnNumber": 1
+      }
+    }
+  ]
+}
