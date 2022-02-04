@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Thu Feb 03 2022 16:20:10",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 147,
+    "hostname": "https://resilient-bear-pv52xd-dev-ed.my.salesforce.com",
+    "orgId": "00D7Q000003RHoXUAW",
+    "username": "faiz.mouna@resilient-bear-pv52xd.com",
+    "testRunId": "7077Q000007mWQn",
+    "userId": "0057Q000002d9FoQAI"
+  },
+  "tests": [
+    {
+      "id": "07M7Q0000000gLlUAI",
+      "queueItemId": "7097Q0000004OKBQA2",
+      "stackTrace": "Class.TestUpdateAccountCA.Setup: line 21, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: FAILED_ACTIVATION, Choose a valid status and save your changes. For a new or cloned order, choose Draft. An Activated order's status can't be edited.: [Status]",
+      "asyncApexJobId": "7077Q000007mWQnQAM",
+      "methodName": "test",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p7Q000009TSNXQA4",
+        "name": "TestUpdateAccountCA",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccountCA"
+      },
+      "runTime": 0,
+      "testTimestamp": "2022-02-03T15:20:11.000+0000",
+      "fullName": "TestUpdateAccountCA.test",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: FAILED_ACTIVATION, Choose a valid status and save your changes. For a new or cloned order, choose Draft. An Activated order's status can't be edited.: [Status]",
+        "exceptionStackTrace": "Class.TestUpdateAccountCA.Setup: line 21, column 1",
+        "className": "TestUpdateAccountCA",
+        "compileProblem": "",
+        "lineNumber": 21,
+        "columnNumber": 1
+      }
+    }
+  ]
+}
