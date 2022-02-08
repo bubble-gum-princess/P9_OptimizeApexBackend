@@ -1,0 +1,42 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 1,
+    "passing": 1,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Fri Feb 04 2022 17:31:56",
+    "testExecutionTimeInMs": 89,
+    "testTotalTimeInMs": 89,
+    "commandTimeInMs": 122,
+    "hostname": "https://resilient-bear-pv52xd-dev-ed.my.salesforce.com",
+    "orgId": "00D7Q000003RHoXUAW",
+    "username": "faiz.mouna@resilient-bear-pv52xd.com",
+    "testRunId": "7077Q000008Gpyc",
+    "userId": "0057Q000002d9FoQAI"
+  },
+  "tests": [
+    {
+      "id": "07M7Q0000000hh4UAA",
+      "queueItemId": "7097Q0000004OYFQA2",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7077Q000008GpycQAC",
+      "methodName": "test",
+      "outcome": "Pass",
+      "apexLogId": "07L7Q0000004779UAA",
+      "apexClass": {
+        "id": "01p7Q000009TSNXQA4",
+        "name": "TestUpdateAccountCA",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccountCA"
+      },
+      "runTime": 89,
+      "testTimestamp": "2022-02-04T16:31:57.000+0000",
+      "fullName": "TestUpdateAccountCA.test"
+    }
+  ]
+}

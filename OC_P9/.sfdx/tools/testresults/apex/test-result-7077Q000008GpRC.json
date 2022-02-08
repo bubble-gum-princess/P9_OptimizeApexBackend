@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Fri Feb 04 2022 17:11:52",
+    "testExecutionTimeInMs": 201,
+    "testTotalTimeInMs": 201,
+    "commandTimeInMs": 211,
+    "hostname": "https://resilient-bear-pv52xd-dev-ed.my.salesforce.com",
+    "orgId": "00D7Q000003RHoXUAW",
+    "username": "faiz.mouna@resilient-bear-pv52xd.com",
+    "testRunId": "7077Q000008GpRC",
+    "userId": "0057Q000002d9FoQAI"
+  },
+  "tests": [
+    {
+      "id": "07M7Q0000000hdWUAQ",
+      "queueItemId": "7097Q0000004OXMQA2",
+      "stackTrace": "Class.TestUpdateAccountCA.test: line 39, column 1",
+      "message": "System.DmlException: Update failed. First exception on row 0 with id 8017Q00000008yiQAA; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalculMontant: execution of BeforeUpdate\n\ncaused by: System.NullPointerException: Argument cannot be null.\n\nTrigger.CalculMontant: line 7, column 1: []",
+      "asyncApexJobId": "7077Q000008GpRCQA0",
+      "methodName": "test",
+      "outcome": "Fail",
+      "apexLogId": null,
+      "apexClass": {
+        "id": "01p7Q000009TSNXQA4",
+        "name": "TestUpdateAccountCA",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccountCA"
+      },
+      "runTime": 201,
+      "testTimestamp": "2022-02-04T16:11:53.000+0000",
+      "fullName": "TestUpdateAccountCA.test",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Update failed. First exception on row 0 with id 8017Q00000008yiQAA; first error: CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY, CalculMontant: execution of BeforeUpdate\n\ncaused by: System.NullPointerException: Argument cannot be null.\n\nTrigger.CalculMontant: line 7, column 1: []",
+        "exceptionStackTrace": "Class.TestUpdateAccountCA.test: line 39, column 1",
+        "className": "TestUpdateAccountCA",
+        "compileProblem": "",
+        "lineNumber": 39,
+        "columnNumber": 1
+      }
+    }
+  ]
+}

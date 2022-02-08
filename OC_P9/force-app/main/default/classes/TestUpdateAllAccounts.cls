@@ -1,5 +1,5 @@
 @isTest
-private class TestUpdateAccountCA {
+private class TestUpdateAllAccounts {
     @TestSetup
      static void Setup() {
         Account acc1 = new Account(Name = 'Test Account 1');

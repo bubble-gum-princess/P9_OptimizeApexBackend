@@ -1,0 +1,69 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 2,
+    "passing": 1,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "50%",
+    "failRate": "50%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Feb 07 2022 16:31:48",
+    "testExecutionTimeInMs": 259,
+    "testTotalTimeInMs": 259,
+    "commandTimeInMs": 108,
+    "hostname": "https://resilient-bear-pv52xd-dev-ed.my.salesforce.com",
+    "orgId": "00D7Q000003RHoXUAW",
+    "username": "faiz.mouna@resilient-bear-pv52xd.com",
+    "testRunId": "7077Q000008J0IJ",
+    "userId": "0057Q000002d9FoQAI"
+  },
+  "tests": [
+    {
+      "id": "07M7Q0000000ioBUAQ",
+      "queueItemId": "7097Q0000004OnaQAE",
+      "stackTrace": "Class.TestCalculMontantAndUpdateAccount.after_update_account_ca: line 65, column 1",
+      "message": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Order.TotalAmount",
+      "asyncApexJobId": "7077Q000008J0IJQA0",
+      "methodName": "after_update_account_ca",
+      "outcome": "Fail",
+      "apexLogId": "07L7Q0000019LITUA2",
+      "apexClass": {
+        "id": "01p7Q000009TxqhQAC",
+        "name": "TestCalculMontantAndUpdateAccount",
+        "namespacePrefix": null,
+        "fullName": "TestCalculMontantAndUpdateAccount"
+      },
+      "runTime": 170,
+      "testTimestamp": "2022-02-07T15:31:49.000+0000",
+      "fullName": "TestCalculMontantAndUpdateAccount.after_update_account_ca",
+      "diagnostic": {
+        "exceptionMessage": "System.SObjectException: SObject row was retrieved via SOQL without querying the requested field: Order.TotalAmount",
+        "exceptionStackTrace": "Class.TestCalculMontantAndUpdateAccount.after_update_account_ca: line 65, column 1",
+        "className": "TestCalculMontantAndUpdateAccount",
+        "compileProblem": "",
+        "lineNumber": 65,
+        "columnNumber": 1
+      }
+    },
+    {
+      "id": "07M7Q0000000ioCUAQ",
+      "queueItemId": "7097Q0000004OnaQAE",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7077Q000008J0IJQA0",
+      "methodName": "before_calcul_field_netamount",
+      "outcome": "Pass",
+      "apexLogId": "07L7Q0000019LITUA2",
+      "apexClass": {
+        "id": "01p7Q000009TxqhQAC",
+        "name": "TestCalculMontantAndUpdateAccount",
+        "namespacePrefix": null,
+        "fullName": "TestCalculMontantAndUpdateAccount"
+      },
+      "runTime": 89,
+      "testTimestamp": "2022-02-07T15:31:49.000+0000",
+      "fullName": "TestCalculMontantAndUpdateAccount.before_calcul_field_netamount"
+    }
+  ]
+}

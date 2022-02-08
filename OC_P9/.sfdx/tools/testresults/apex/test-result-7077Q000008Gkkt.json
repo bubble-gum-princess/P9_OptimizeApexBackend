@@ -1,0 +1,22 @@
+{
+  "summary": {
+    "outcome": "Skipped",
+    "testsRan": 0,
+    "passing": 0,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Fri Feb 04 2022 15:35:51",
+    "testExecutionTimeInMs": 0,
+    "testTotalTimeInMs": 0,
+    "commandTimeInMs": 107,
+    "hostname": "https://resilient-bear-pv52xd-dev-ed.my.salesforce.com",
+    "orgId": "00D7Q000003RHoXUAW",
+    "username": "faiz.mouna@resilient-bear-pv52xd.com",
+    "testRunId": "7077Q000008Gkkt",
+    "userId": "0057Q000002d9FoQAI"
+  },
+  "tests": []
+}

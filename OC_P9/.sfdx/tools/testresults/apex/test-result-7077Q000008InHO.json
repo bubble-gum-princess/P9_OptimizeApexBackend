@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Mon Feb 07 2022 12:13:18",
+    "testExecutionTimeInMs": 191,
+    "testTotalTimeInMs": 191,
+    "commandTimeInMs": 138,
+    "hostname": "https://resilient-bear-pv52xd-dev-ed.my.salesforce.com",
+    "orgId": "00D7Q000003RHoXUAW",
+    "username": "faiz.mouna@resilient-bear-pv52xd.com",
+    "testRunId": "7077Q000008InHO",
+    "userId": "0057Q000002d9FoQAI"
+  },
+  "tests": [
+    {
+      "id": "07M7Q0000000iVTUAY",
+      "queueItemId": "7097Q0000004Oh1QAE",
+      "stackTrace": "Class.TestUpdateAccountCA.test: line 47, column 1",
+      "message": "System.AssertException: Assertion Failed: Expected: 21450, Actual: null",
+      "asyncApexJobId": "7077Q000008InHOQA0",
+      "methodName": "test",
+      "outcome": "Fail",
+      "apexLogId": "07L7Q00000049zAUAQ",
+      "apexClass": {
+        "id": "01p7Q000009TSNXQA4",
+        "name": "TestUpdateAccountCA",
+        "namespacePrefix": null,
+        "fullName": "TestUpdateAccountCA"
+      },
+      "runTime": 191,
+      "testTimestamp": "2022-02-07T11:13:19.000+0000",
+      "fullName": "TestUpdateAccountCA.test",
+      "diagnostic": {
+        "exceptionMessage": "System.AssertException: Assertion Failed: Expected: 21450, Actual: null",
+        "exceptionStackTrace": "Class.TestUpdateAccountCA.test: line 47, column 1",
+        "className": "TestUpdateAccountCA",
+        "compileProblem": "",
+        "lineNumber": 47,
+        "columnNumber": 1
+      }
+    }
+  ]
+}
