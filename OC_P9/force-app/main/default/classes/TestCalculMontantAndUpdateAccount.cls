@@ -23,7 +23,7 @@ private class TestCalculMontantAndUpdateAccount {
         Insert pbe;
 
         Order o1 = new Order(AccountId = acc1.Id, EffectiveDate=System.today() + 5,
-                status='Ordered', Pricebook2Id = pricebookId, ShipmentCost__c = SHIPMENTCOST);
+                status='Draft', Pricebook2Id = pricebookId, ShipmentCost__c = SHIPMENTCOST);
         insert o1;
 
         OrderItem oi1 = new OrderItem (OrderId = o1.Id, PricebookEntryId = pbe.Id, Quantity=10, UnitPrice = 150);
@@ -37,7 +37,7 @@ private class TestCalculMontantAndUpdateAccount {
 
         Test.startTest();
 
-        Order orderEtatAvantTrigger = [SELECT EffectiveDate FROM Order LIMIT 1];
+        Order orderEtatAvantTrigger = [SELECT status FROM Order LIMIT 1];
 
         orderEtatAvantTrigger.EffectiveDate = System.today();
         Database.SaveResult RS = Database.update(orderEtatAvantTrigger, true);
@@ -53,9 +53,9 @@ private class TestCalculMontantAndUpdateAccount {
     @isTest public static void after_update_account_ca(){
         Test.startTest();
 
-        Order orderEtatApresTrigger = [SELECT EffectiveDate FROM Order LIMIT 1];
+        Order orderEtatApresTrigger = [SELECT Status, TotalAmount FROM Order LIMIT 1];
 
-        orderEtatApresTrigger.EffectiveDate = System.today();
+        orderEtatApresTrigger.Status= 'Ordered';
         Database.SaveResult RS = Database.update(orderEtatApresTrigger, true);
 
         Test.stopTest();
