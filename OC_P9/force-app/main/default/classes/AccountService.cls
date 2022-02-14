@@ -16,6 +16,4 @@ public with sharing class AccountService {
 
         update accounts;
     }
-
-}
-        
+} 
