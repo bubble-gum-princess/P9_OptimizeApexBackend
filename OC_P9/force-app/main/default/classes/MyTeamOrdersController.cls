@@ -1,10 +1,6 @@
 public without sharing class MyTeamOrdersController {
-    public decimal SumOders{
-        get{
-			AggregateResult groupedResults = [SELECT SUM(TotalAmount) total FROM Order];
-			return (decimal)groupedResults.get('total');
-
-        }
-        set;
+    public AggregateResult[] getSumOrders(){
+       return OrderService.getOrders();
     }
+    
 }

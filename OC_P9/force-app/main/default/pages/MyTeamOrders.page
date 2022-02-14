@@ -1,7 +1,14 @@
-<apex:page controller="MyTeamOrdersController" >
-    <div>
-        <h1>
-            Sum of my team orders: <apex:outputText value="{!SumOders}" />
-        </h1>
-    </div>
+<apex:page controller="MyTeamOrdersController">
+    <apex:form>
+        <apex:pageBlock title="Orders list By Commercial" id="Orders_list">
+            <apex:pageBlockTable value="{! sumOrders }" var="ord">
+                <apex:column value="{! ord['username'] }" >
+                    <apex:facet name="header">Commercial</apex:facet>
+                </apex:column>
+                <apex:column value="{! ord['total'] }" >
+					<apex:facet name="header">Total Orders</apex:facet>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
 </apex:page>
