@@ -22,6 +22,7 @@ trigger CalculMontantAndUpdateAccountCA on Order (before update,after update) {
             }
             
             if (mapAccountIdOrder.size() > 0) {
+                
                 listacc = [SELECT Id, Chiffre_d_affaire__c FROM Account WHERE Id IN :mapAccountIdOrder.keySet()];
 
                 for(Account acc : listacc){
