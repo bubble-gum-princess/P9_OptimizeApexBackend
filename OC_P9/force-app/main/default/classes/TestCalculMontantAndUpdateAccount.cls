@@ -2,7 +2,7 @@
 private class TestCalculMontantAndUpdateAccount {
     @TestSetup
     static void Setup() {
-        TestUtils.LoadData(100, 'Draft');
+        TestDataFactory.LoadData(100, 'Draft');
     }
 
     @isTest
@@ -24,7 +24,10 @@ private class TestCalculMontantAndUpdateAccount {
             System.assert(RS.isSuccess());
 
         for (Order orderEtatbeforeTrigger : listOrders) {
-            System.assertEquals(TestUtils.ORDER_NET_AMOUNT, orderEtatbeforeTrigger.NetAmount__c);
+            System.assertEquals(
+                TestDataFactory.ORDER_NET_AMOUNT,
+                orderEtatbeforeTrigger.NetAmount__c
+            );
         }
     }
 
@@ -46,7 +49,7 @@ private class TestCalculMontantAndUpdateAccount {
             System.assert(RS.isSuccess());
 
         for (Account acc : listAccounts) {
-            System.assertEquals(TestUtils.ACCOUNT_CA, acc.Chiffre_d_affaire__c);
+            System.assertEquals(TestDataFactory.ACCOUNT_CA, acc.Chiffre_d_affaire__c);
         }
     }
 }

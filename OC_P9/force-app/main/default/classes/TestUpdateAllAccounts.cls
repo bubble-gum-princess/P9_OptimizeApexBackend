@@ -2,7 +2,7 @@
 private class TestUpdateAllAccounts {
     @TestSetup
     static void Setup() {
-        TestUtils.LoadData(200, 'Ordered');
+        TestDataFactory.LoadData(200, 'Ordered');
     }
 
     @isTest

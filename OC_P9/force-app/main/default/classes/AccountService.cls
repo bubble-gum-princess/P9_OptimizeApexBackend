@@ -4,8 +4,7 @@ public with sharing class AccountService {
             myAccount.Chiffre_d_affaire__c = 0;
             for (Order o : myAccount.orders) {
                 if (o.Status == 'Ordered') {
-                    myAccount.Chiffre_d_affaire__c =
-                        myAccount.Chiffre_d_affaire__c + o.TotalAmount;
+                    myAccount.Chiffre_d_affaire__c = myAccount.Chiffre_d_affaire__c + o.TotalAmount;
                 }
             }
         }

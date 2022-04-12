@@ -1,4 +1,4 @@
-public with sharing class TestUtils {
+public with sharing class TestDataFactory {
     public static final integer ACCOUNT_CA = 21500;
     public static final integer SHIPMENTCOST = 50;
     public static final integer ORDER_NET_AMOUNT = ACCOUNT_CA - SHIPMENTCOST;
@@ -24,7 +24,7 @@ public with sharing class TestUtils {
                     EffectiveDate = System.today() + 5,
                     status = statusOrder,
                     Pricebook2Id = pricebookId,
-                    ShipmentCost__c = TestUtils.SHIPMENTCOST
+                    ShipmentCost__c = TestDataFactory.SHIPMENTCOST
                 )
             );
         }
@@ -47,6 +47,7 @@ public with sharing class TestUtils {
             Quantity = 10,
             UnitPrice = 150
         );
+
         listOrderItems.add(oi1);
         OrderItem oi2 = new OrderItem(
             OrderId = o.Id,
