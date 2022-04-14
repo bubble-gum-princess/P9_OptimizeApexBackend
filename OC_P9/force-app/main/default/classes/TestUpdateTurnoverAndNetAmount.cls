@@ -1,5 +1,5 @@
 @isTest
-private class TestCalculMontantAndUpdateAccount {
+private class TestUpdateTurnoverAndNetAmount {
     @TestSetup
     static void Setup() {
         TestDataFactory.LoadData(100, 'Draft');

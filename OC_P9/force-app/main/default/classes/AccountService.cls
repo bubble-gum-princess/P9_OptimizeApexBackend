@@ -1,5 +1,5 @@
 public with sharing class AccountService {
-    public static void updateChiffreAffaire(List<Account> accounts) {
+    public static void updateTurnover(List<Account> accounts) {
         for (Account myAccount : accounts) {
             myAccount.Chiffre_d_affaire__c = 0;
             for (Order o : myAccount.orders) {

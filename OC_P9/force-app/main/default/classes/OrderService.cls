@@ -14,7 +14,7 @@ public with sharing class OrderService {
                 (newOrder.ShipmentCost__c == null ? 0 : newOrder.ShipmentCost__c);
         }
     }
-    public static void calculCA(Map<Id, Order> oldOrders, List<Order> newOrders) {
+    public static void calculTurnover(Map<Id, Order> oldOrders, List<Order> newOrders) {
         List<Account> listacc = new List<Account>();
         Map<Id, Order> mapAccountIdOrder = new Map<Id, Order>();
         //List<Order> Orders = new List<Order>(trigger.new);

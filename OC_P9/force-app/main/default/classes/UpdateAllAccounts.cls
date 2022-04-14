@@ -9,7 +9,7 @@ global class UpdateAllAccounts implements Database.Batchable<sObject> {
 
     global void execute(Database.BatchableContext info, List<Account> scope) {
         System.debug('scope size = ' + scope.size());
-        AccountService.updateChiffreAffaire(scope);
+        AccountService.updateTurnover(scope);
     }
 
     global void finish(Database.BatchableContext info) {
